@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Encriptador</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--ENCABEZADO -->
+        <img class="logo" src="imagenes/Frame 6.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section>
+            <!-- PRIMERA seccion -->
+            <textarea id="textoAreaEntrada" class="text-area" cols="30" rows="10"
+                placeholder="Ingrese el texto aqu&iacute;"></textarea>
+            <div>
+                <h6 class="informacion" id="textoInformacion">Solo letras min&uacute;sculas y sin acentos.</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" id="botonEncriptar">Encriptar</button>
+                <button class="btn-desencriptar" id="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="lateral-derecha">
+            <!-- SEGUNDA seccion -->
+            <textarea class="mensaje" id="textoAreaSalida" cols="20" rows="10" disabled></textarea>
+            <div>
+                <h6 class="info-banner">Solo letras min&uacute;sculas y sin acentos.</h6>
+            </div>
+            <div>
+                <button id="btn-copiar" class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
